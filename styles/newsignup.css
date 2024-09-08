@@ -1,0 +1,75 @@
+body{
+    background-color: #344a72;
+    font-family: 'roboto', sans-serif;
+    background-image: url(../img/mage\ 4.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.signup-box{
+
+    width:360px;
+    height: 620px;
+    margin: auto;
+    background-color: #f07b7b;
+    border-radius: 10px;
+    background: transparent;
+
+   
+}
+h1{
+
+    text-align: center;
+    padding-top: 15px;
+    color: #070707;
+}
+h4{
+
+    text-align: center;
+    color:rgb(11, 11, 10);
+}
+form{
+    width:300px;
+    margin-left: 20px;
+}
+form label{
+
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+}
+form input{
+
+    width: 100%;
+    padding: 7px;
+    border:none;
+    border: 1px solid gray;
+    outline: none;
+}
+.btn-btn-primary{
+
+    width:300px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 15px;
+}
+p{
+
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+.para-2{
+
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    margin-top: -10px;
+}
+.para-2 a{
+
+    color: greenyellow;
+}

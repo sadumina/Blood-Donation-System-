@@ -1,0 +1,112 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+
+    <link rel="stylesheet" href="code.css">
+
+    
+</head>
+<body>
+    
+
+<div class="container">
+    <div class="logo">
+        <img src="logo.jpeg">
+    </div>
+
+    <form id="appointment-form" method="post" action="create.php" onsubmit="return formDetails(event)">
+        <h1>First time Donor Book Appointment</h1>
+
+       
+        <div class="appointment">
+        <label for="name ">Donor Name: </label>
+        <input type="text" id="name " name="name"><br>
+
+        <label for="gender">Gender<br>
+            <input type="radio" id="gender" name="gender" value="male"> Male<br>
+            <input type="radio" id="gender" name="gender" value="female"> Female<br>
+            <input type="radio" id="gender" name="gender" value="other"> Other <br>
+        </label><br>
+       
+
+        <label for="phone">Contact No:</label>
+        <input type="tel " name="phone" id="num" required><br><br>
+        
+
+        <label for="date">Appointment Date:</label>
+		<input type="date" id="date" name="date" required><br><br>
+
+        <label>Time Slot</label>
+        <input type="hidden" id="timeslot" name="timeslot">
+      
+        <div id="time-slots">
+            <button type="button" data-time="9.00AM-10.00AM" onclick="selectTimeSlot('9.00AM-10.00AM')">9.00AM-10.00AM</button>
+            <button type="button" data-time="10.00AM-11.00AM" onclick="selectTimeSlot('10.00AM-11.00AM')">10.00AM-11.00AM</button><br>
+            <button type="button" data-time="11.00AM-12.00AM" onclick="selectTimeSlot('11.00AM-12.00AM')">11.00AM-12.00AM</button>
+            <button type="button" data-time="12.00AM-1.00PM" onclick="selectTimeSlot('12.00AM-1.00PM')">12.00AM-1.00PM</button><br>
+            <button type="button" data-time="1.00PM-2.00PM" onclick="selectTimeSlot('1.00PM-2.00PM')">1.00PM-2.00PM</button>
+            <button type="button" data-time="2.00PM-3.00PM" onclick="selectTimeSlot('2.00PM-3.00PM')" >2.00PM-3.00PM</button><br>
+        </div>
+
+       </div><br><br>
+
+       <lable for="location" >Blood Donation Centre
+       <select id="location" name="location" required>
+        <option value="">Select location</option>
+        <option value="malabe">Malabe Hospital</option>
+        <option value="colombo">General Hospital</option>
+        <option value="battaramulla">Nawaloka Hospital</option>
+       </select></lable><br><br>
+
+       <label for="bloodtype">Blood type</label>
+       <input type="text" id="type" name="type"><br><br>
+
+
+       <label for="donation">Have you ever donate blood before<br>
+       <input type="radio" id="yes-donate-before" name="donate_before" value="yes">Yes<br>
+       <input type="radio" id="no-donate-before" name="donate_before" value="no"> No<br>
+    </lable><br>
+
+       <hr>
+       <h3>health security check</h3>
+
+       <label for="donation">Do you suffer from any diseases<br>
+       <input type="radio" id="yes-disease" name="diseases" value="yes">Yes<br>
+       <input type="radio" id="no-disease" name="diseases" value="no"> No<br>
+    </label><br>
+
+       <label for="donation">Do you have any allergies<br>
+       <input type="radio" id="yes-allergies" name="allergies" value="yes">Yes<br>
+       <input type="radio" id="no-allergies" name="allergies" value="no"> No<br>
+    </label><br>
+
+       <label for="donation">Do you have any tattoos <br>
+       <input type="radio" id="yes-tattoos" name="tattoos" value="yes">Yes<br>
+       <input type="radio" id="no-tattoos" name="tattoos" value="no"> No<br>
+    </label><br>
+
+       <h2>Terms and conditions</h2>
+       <label>
+        <input class="terms" type="checkbox" id="terms" name="terms" required>
+        I agree to all the <a href="Terms.html" target="_blank">Terms and Conditions</a>
+       </label><br><br>
+
+       <button class="submit" type="submit" name="reg"  >Book Appointment</button>
+
+    </div>
+    </form>
+    <div id="success-message" style="display: none; text-align: center; margin-top: 20px; color: green;">
+        <h2>Appointment booked successfully!</h2>
+        <p>Thank you for scheduling an appointment. We will contact you soon.</p>
+    </div>
+</div>
+  <script src="book appointment 2.js"></script>
+  
+  
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Appointment </title>
+    <link rel="stylesheet" href="doctor-choosing .css">
+</head>
+<body>
+    <div class="container1">
+        <form class="doctor-choosing" ></form>
+    <h1>Choose your doctor</h1>
+
+<div class="doctor">
+    <input type="search" placeholder="Search...">
+    <button type="submit">Search</button>
+
+</form>
+
+<div class="doctor" onclick="SelectDoc('Dr.Anna Jones','book appointment 2.html')">
+    <img src="doctor1.jpeg" alt="Dr.Anna Jones">
+    <div>
+        <h2>Dr.Anna Jones</h2>
+        <p>General practicer </p>
+        <p> next available today at 3.30p.m.</p>
+    </div><br><br>
+</div>
+<div class="doctor" onclick="SelectDoc('Dr.Shawn Murphy','book appointment 2.html')">
+    <img src="doctor2.jpeg" alt="Dr.Shawn Murphy">
+    <div>
+    <h2>Dr.Shawn Murphy</h2>
+    <p>Specialist</p>
+    <p>next available tomorrow at 9.30 a.m. </p>
+    </div>
+</div>
+
+<script>
+    function SelectDoc(Doctorname,redirectUrl){
+    
+        if(confirm(`you have selected ${Doctorname}.click "OK" to proceed`)){
+            window.location.href= redirectUrl + '?doctor='+ encodeURIComponent(Doctorname);
+            console.log(`you have selected ${Doctorname} and will be directed.`);
+        }else{
+            console.log(`you have canceled ${Doctorname}`);
+        }
+    }
+   
+</script>
+</div>
+</body>
+</div>
+</html>

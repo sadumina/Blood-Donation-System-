@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catylist Bank</title>
+
+    <link rel="stylesheet" href="styles/Admin.css">
+    <link href="https://fonts.google.com/specimen/Montserrat?query=montse" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+</head>
+<body>
+    <div class="grid-container">
+         <header class="header">
+             <div class="menu-icon" onclick="openSidebar()">
+                <span class="material-icons-outlined">menu</span>
+             </div>
+             <div class="header-left">
+                <span class="material-icons-outlined"> search</span>
+             </div>
+             <div class="header-right">
+                <span class="material-icons-outlined">notifications</span>
+                <span class="material-icons-outlined">email</span>
+                <span class="material-icons-outlined"> account_circle</span>
+             </div>
+         </header>
+
+         <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <span class="material-icons-outlined">shopping_cart</span>STORE
+                </div>
+                <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+            </div>
+
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">dashboard</span>
+                    <span class="material-icons-outlined">campaign</span>
+                    <span class="material-icons-outlined">category</span>
+                    <span class="material-icons-outlined">groups</span>
+                    <span class="material-icons-outlined">fact_check</span>
+
+                </li>
+            </ul>
+
+         </aside>
+
+         <main class="main-container">
+
+
+         </main>
+    </div>
+
+    <script src="Admin.js"></script>
+</body>
+</html>

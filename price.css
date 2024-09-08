@@ -1,0 +1,88 @@
+body,html{
+height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+   /* background-image: url(../img/IMG2.jpeg);*/
+    /*background-repeat: no-repeat; */
+    background-color: rgb(216, 99, 99);
+    
+
+}
+.container{
+    background-color:white;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(23, 23, 23, 0.1);
+  padding: 60px;
+  max-width: 700px;
+  width: 1000px;
+  text-align: left;
+  align-items: center;
+}
+.demo{
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+}
+.demo h3{
+
+    text-align: center;
+}
+.demo button{
+    align-self: center;
+}
+input[type="text"],
+input[type="tel"]{
+    width: 100%;
+    padding:10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(236, 241, 245);
+
+}
+
+button[type ="submit"]{
+    width: 20%;
+    padding:10px;
+    border: none;
+   background-color: rgba(213, 18, 18, 0.947);
+    border-radius: 5px;
+    cursor: pointer;
+  color: azure;
+}
+
+
+.estimate{
+        padding: 60px;
+        max-width: 700px;
+        width: 1000px;
+        text-align: left;
+       align-items: left;
+       font-size: 1.3rem; 
+       padding: 1.1rem;
+    }
+.estimate select {
+        font-size: 1.5rem; 
+        padding: 1.1rem; 
+        height: 4rem; 
+        width: 200px;
+   }
+.price {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    height: 1.3rem;
+    width: 200px;
+   }
+.logo {
+    position: fixed;
+}
+.logo img {
+    width:150px;
+    position: relative;
+    top:15px;
+    left:-200px;
+}
+

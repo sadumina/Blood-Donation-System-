@@ -1,0 +1,71 @@
+<html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" ;content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/newsignup.css">
+        <title>Catlyst Bank</title>
+        <script>
+            function validateEmail() {
+                var email = document.forms["signupForm"]["email"].value;
+                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    alert("Please enter a valid email address.");
+                    return false;
+                }
+                else{
+
+                    alert("valid!");
+                    return true;
+                }
+                function validatepassword () {
+                    var password = document.forms["signupForm"]["password"].value;
+                    var confirmpassword = document.forms["signupForm"]["confirmpassword"].value;
+                    if (confirmpassword != password)
+                    {
+                        alert("Password do not match, Please check and try again.");
+                        return false;
+                    }
+                    else {
+                        alert ("Password match. confirmation valid!");
+                        return true;
+                    }
+                }
+            }
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="signup-box">
+            <h1>Sign up</h1>
+            <h4>Donate Your Blood And Save a Life</h4>
+             
+            <form method="post" action="newsignup.php" return onsubmit="return validatepassword ();" return onsubmit="return validateEmail();">
+                <label>First Name</label>
+                <input type="text" placeholder="First Name" name="Firstname">
+
+                <label>Last Name</label>
+                <input type="text" placeholder="Last name" name="lastname">
+
+                <label>Set a password</label>
+                <input type="password" placeholder="Your password" name="password">
+
+                <label>confirm password</label>
+                <input type="password" placeholder="Confirm password" name="confirmpassword">
+
+                <label>Email</label>
+                <input type="email" placeholder="Email" name="email">
+
+                <button type="submit" class="btn-btn-primary" name="submit">submit</button>
+            </form>
+            <p> You have to agree with the conditions
+                <a href="#">privacy and policy</a> and <a href="terms.html">terms and condition</a>
+            </p>
+        </div>
+        <p class="para-2">Already have an account?<a href="#">Login</a></p>
+    </body>
+
+    </html>

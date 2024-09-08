@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins' ,sans-serif;
+}
+.container{
+
+    min-height: 100vh;
+    width: 100%;
+    background-color: #1c1c1c;
+    background-image: url(../img/pexels-franco30-12193105.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.service-wrapper{
+
+    padding: 5% 8%;
+}
+.service{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    color: #0c0b0b;
+    font-size: 3rem;
+}
+p{
+
+    color: rgba(42, 39, 39, 0.6);
+    text-align: center;
+}
+.cards{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 42px;
+}
+.card{
+
+    height: 330px;
+    width: 370px;
+    background-color: rgba(255,255,255,0.05);
+    padding: 3% 8%;
+    border-radius: 8px;
+    transition: 0.6s;
+}
+.card i{
+
+    color: maroon;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+}
+.card h3{
+
+   color: #1a1818;
+   font-size: 20px;
+   margin: 10px 0;
+   font-size: 500;
+}
+.card p{
+
+    text-align: left;
+    width: 100%;
+    margin: 20px 0;
+}
+.card:hover{
+
+    background: linear-gradient(90deg,#d40422,#f35500);
+    transform: translateY(-8px);
+}
+.card:hover i{
+
+    color: #fff;
+}
+@media (max-width:1200px){
+
+    .cards{
+
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:900px){
+
+    .cards{
+
+        grid-template-columns: repeat(1,1fr);
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width:768px){
+
+   h1{
+    font-size: 2rem;
+   }
+   p{
+      
+     width:90%;
+   }
+}

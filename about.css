@@ -1,0 +1,55 @@
+/* about.css */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    color: #333333; /* Default text color */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.header_section {
+    background-color: #333333;
+    padding: 20px 0;
+    color: #ffffff;
+}
+
+.header_section a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    align-items: center;
+}
+
+.header_section a:hover {
+    color: #ff6347; /* Hover effect */
+}
+
+.about_section {
+    padding: 60px 20px;
+    background-color: #f7f7f7;
+}
+
+.heading_container h2 {
+    color: #d9534f; /* Heading color */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.about_content {
+    font-size: 1.1em;
+    color: #666666;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.footer_section {
+    text-align: center;
+    padding: 20px;
+    background-color: #333333;
+    color: #ffffff;
+}

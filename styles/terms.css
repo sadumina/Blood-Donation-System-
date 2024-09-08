@@ -1,0 +1,99 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* Hero Area */
+.hero_area {
+    background: linear-gradient(to right, #8e1e1e, #5f2a2c);
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero_area h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Header Section (Navigation Bar) */
+.header_section {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+.header_section a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding: 10px 20px; /* Adjust padding for better spacing */
+}
+
+.header_section a:hover {
+    color: #e66465;
+}
+
+.header_section .active {
+    border-bottom: 2px solid #e66465;
+}
+
+/* Why Us Section */
+.whyus_section {
+    background-color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.whyus_section .heading_container h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.whyus_section .feature {
+    margin-bottom: 40px;
+}
+
+.whyus_section .feature h3 {
+    font-size: 28px;
+    color: #e66465;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.whyus_section .feature p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Footer Section */
+.footer_section {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer_section p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.footer_section span {
+    color: #e66465;
+}

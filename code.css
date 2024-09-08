@@ -1,0 +1,114 @@
+body{
+    display: flex;
+    justify-content: center;
+  align-items: center;
+ background-image: url('img3.webp');
+ color: rgb(12, 11, 11);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  margin: 0%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.container{
+    max-width: 1000px;
+    width: 100%;
+    height: 100%;
+    padding: 28px;
+    margin: 0 28px;
+
+   
+}
+.appointment{
+    max-width: 650px;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    font-size: larger;
+
+}
+ input{
+    width: 200px;
+    height: 40px;
+    padding:10px;
+    margin-bottom: 18px;
+    border: 1px solid rgb(194, 53, 10);
+    border-radius: 20px;
+    box-sizing: border-box;
+
+}
+ input[type="radio"]{
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+    
+}
+
+
+#time-slots button {
+    width: 200px;
+    height: 60px;
+    background-color: #e61d1d;
+    color:white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    
+}
+
+#time-slots button.selected {
+    background-color: rgb(241, 239, 239);
+    color: rgb(235, 12, 12);
+    align-items: center;
+}
+button.submit{
+    background-color:red;
+    color: white;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+
+
+
+}
+button.submit.selected{
+    background-color: rgb(241, 239, 239);
+    color: rgb(235, 12, 12);
+    align-items: center;
+}
+.logo {
+    position: fixed;
+}
+.logo img {
+    width:150px;
+    position: relative;
+    top:15px;
+    left:-200px;
+}
+.success-message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    text-align: center;
+}
+
+.success-message {
+    display: none; 
+    text-align: center;
+    margin-top: 20px;
+    color: green;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}

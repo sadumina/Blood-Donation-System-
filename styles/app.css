@@ -1,0 +1,85 @@
+body{
+
+    width:100%;
+    height:100%;
+    background-image:url(../images/pexels-photo-12193105.jpeg);
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+}
+.inner-layer{
+     
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,147,173,0.9);
+    overflow: auto;
+}
+.form-data{
+
+    margin-top: 20%;
+    background-color:#fff;
+
+}
+.form-body{
+
+    padding:25px;
+    
+  
+}
+.form-head{
+
+    padding:10px;
+    border-bottom: 0px solid #333;
+}
+.form-head h2{
+
+    font-size: 22px;
+    font-weight: 600;
+}
+.form-row{
+
+    border-bottom:15px;
+}
+.form-control{
+
+    background-color: aquamarine;
+}
+.form-control:hover{
+
+    box-shadow:none;
+    border:3px solid #138496;
+
+
+}
+.btn-appointment{
+
+    background-color: green;
+    border-color: green;
+}
+.content{
+
+    margin-top: 0%;
+    text-align: left;
+    color:white;
+    padding:30px;
+}
+.content h1{
+
+    font-weight: 600;
+    font-size:2.5rem;
+}
+.content p{
+
+    font-size:22px;
+}
+.no-margin{
+
+    margin:0px;
+}
+@media  screen and (max-width:976px) {
+    
+    .col-sm-6{
+        width:100%
+    }
+}
